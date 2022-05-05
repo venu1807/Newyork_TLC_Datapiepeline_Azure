@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vulnerabilityAssessments_Default_storageContainerPath": {
+            "value": null
+        },
+        "servers_nyc_tlc_database_server_name": {
+            "value": null
+        },
+        "storageAccounts_nyctlcdatablobstorage_name": {
+            "value": null
+        },
+        "workspaces_nyc_tlc_databricks_workspace_name": {
+            "value": null
+        }
+    }
+}
