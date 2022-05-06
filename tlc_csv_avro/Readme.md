@@ -1,3 +1,6 @@
+### Download link for all data files in AVRO format
+https://drive.google.com/drive/folders/113sFz5XWuMwao_frV6Ry5umJDL1_nimz?usp=sharing
+
 ### AVRO Schema for Green Taxis:                         
 
 | Column name  | Type |
