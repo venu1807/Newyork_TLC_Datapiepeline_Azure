@@ -1,3 +1,7 @@
+### Click on the below link for accessing all data files in parquet format
+
+https://drive.google.com/drive/folders/1OIjytI5aQoht4UAQaP9sX7iWGhlB2Skk?usp=sharing
+
 ### Parquet Schema for Green Taxis:                         
 
 | Column name  | Type |
