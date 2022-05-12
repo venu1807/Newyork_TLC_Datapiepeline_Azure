@@ -1,11 +1,11 @@
 # Newyork_TLC_Datapipeline_Azure
 
 
-#Problem Definition:
+##Problem Definition:
 
 The city of New York provides historical data of "The New York City Taxi and Limousine Commission" (TLC). Your colleagues from the data science team want to create various evaluations and predictions based on this data. Depending on their different use cases, they need the output data in a row-oriented and column-oriented format. So they approach to you and ask for your help. Your colleagues only rely on a frequent output of the datasets in these two formats, so you have a free choice of your specific technologies.
 
-#Tasks to be performed:
+##Tasks to be performed:
 
 *Build a data pipeline that imports the TLC datasets for at least the last three years
 
@@ -29,5 +29,6 @@ The city of New York provides historical data of "The New York City Taxi and Lim
 
  	*The top 3 of the busiest hours
  	
-Proposed Solution:
+##Proposed Solution in Microsoft Azure Cloud:
+
 ![](https://github.com/venu1807/Newyork_TLC_Datapiepeline_Azure/blob/main/Newyork_TLC_Dataset_Azure.png)
