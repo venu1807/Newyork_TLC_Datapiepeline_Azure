@@ -1,0 +1,12 @@
+{
+	"name": "tlc_table_sql_green",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=nyc-tlc-database-server.database.windows.net;initial catalog=nyc-tlc-database-sql;user id=tlc1807admin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDJBMzE4MzZDLUI2RkItNERFMC05NzM0LTQxMzA3RDAzNEExMF81NDE3NGE3Yy1jNDY0LTQ5MGYtOTc0Ni03ODRlNTRiYjhhOWMiDQp9"
+		}
+	}
+}

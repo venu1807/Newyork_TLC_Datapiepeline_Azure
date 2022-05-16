@@ -1,0 +1,309 @@
+{
+	"name": "TLC_CSV_Parquet_Green",
+	"properties": {
+		"activities": [
+			{
+				"name": "TLC_CSV_Parquet_Green",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false,
+							"prefix": "green"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "VendorID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "VendorID",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lpep_pickup_datetime",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lpep_pickup_datetime",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "lpep_dropoff_datetime",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "lpep_dropoff_datetime",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "store_and_fwd_flag",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "store_and_fwd_flag",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "RatecodeID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RatecodeID",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "PULocationID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PULocationID",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "DOLocationID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "DOLocationID",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "passenger_count",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "passenger_count",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "trip_distance",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "trip_distance",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "fare_amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "fare_amount",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "extra",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "extra",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "mta_tax",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mta_tax",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "tip_amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tip_amount",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "tolls_amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "tolls_amount",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ehail_fee",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ehail_fee",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "improvement_surcharge",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "improvement_surcharge",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "total_amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "total_amount",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "payment_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "payment_type",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "trip_type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "trip_type",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "congestion_surcharge",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "congestion_surcharge",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "tlc_csv_parquet_green_input",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "tlc_csv_parquet_output",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-05-05T15:20:38Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

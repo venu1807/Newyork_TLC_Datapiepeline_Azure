@@ -1,0 +1,164 @@
+{
+	"name": "tlc_csv_avro_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "tlcdatablobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Avro",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "nyctlc-avro"
+			}
+		},
+		"schema": {
+			"type": "record",
+			"name": "HybridDelivery.ClientLibraryJob",
+			"fields": [
+				{
+					"name": "VendorID",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "lpep_pickup_datetime",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "lpep_dropoff_datetime",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "store_and_fwd_flag",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "RatecodeID",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "PULocationID",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "DOLocationID",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "passenger_count",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "trip_distance",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "fare_amount",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "extra",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "mta_tax",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "tip_amount",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "tolls_amount",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "ehail_fee",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "improvement_surcharge",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "total_amount",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "payment_type",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "trip_type",
+					"type": [
+						"string",
+						"null"
+					]
+				},
+				{
+					"name": "congestion_surcharge",
+					"type": [
+						"string",
+						"null"
+					]
+				}
+			]
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

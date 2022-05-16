@@ -1,0 +1,101 @@
+{
+	"name": "tlc_csv_parquet_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "tlcdatablobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "nyctlcblob-parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "VendorID",
+				"type": "UTF8"
+			},
+			{
+				"name": "lpep_pickup_datetime",
+				"type": "UTF8"
+			},
+			{
+				"name": "lpep_dropoff_datetime",
+				"type": "UTF8"
+			},
+			{
+				"name": "store_and_fwd_flag",
+				"type": "UTF8"
+			},
+			{
+				"name": "RatecodeID",
+				"type": "UTF8"
+			},
+			{
+				"name": "PULocationID",
+				"type": "UTF8"
+			},
+			{
+				"name": "DOLocationID",
+				"type": "UTF8"
+			},
+			{
+				"name": "passenger_count",
+				"type": "UTF8"
+			},
+			{
+				"name": "trip_distance",
+				"type": "UTF8"
+			},
+			{
+				"name": "fare_amount",
+				"type": "UTF8"
+			},
+			{
+				"name": "extra",
+				"type": "UTF8"
+			},
+			{
+				"name": "mta_tax",
+				"type": "UTF8"
+			},
+			{
+				"name": "tip_amount",
+				"type": "UTF8"
+			},
+			{
+				"name": "tolls_amount",
+				"type": "UTF8"
+			},
+			{
+				"name": "ehail_fee",
+				"type": "UTF8"
+			},
+			{
+				"name": "improvement_surcharge",
+				"type": "UTF8"
+			},
+			{
+				"name": "total_amount",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment_type",
+				"type": "UTF8"
+			},
+			{
+				"name": "trip_type",
+				"type": "UTF8"
+			},
+			{
+				"name": "congestion_surcharge",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

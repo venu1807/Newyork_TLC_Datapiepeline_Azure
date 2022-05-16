@@ -1,0 +1,125 @@
+{
+	"name": "tlc_table_sql_green",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "tlc_table_sql_green",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "VendorID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "lpep_pickup_datetime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "lpep_dropoff_datetime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "store_and_fwd_flag",
+				"type": "varchar"
+			},
+			{
+				"name": "RatecodeID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PULocationID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DOLocationID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "passenger_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "trip_distance",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "fare_amount",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "extra",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "mta_tax",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "tip_amount",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "tolls_amount",
+				"type": "varchar"
+			},
+			{
+				"name": "ehail_fee",
+				"type": "varchar"
+			},
+			{
+				"name": "improvement_surcharge",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "total_amount",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			},
+			{
+				"name": "payment_type",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "trip_type",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "congestion_surcharge",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 5
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TLC_DATA_GREEN"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

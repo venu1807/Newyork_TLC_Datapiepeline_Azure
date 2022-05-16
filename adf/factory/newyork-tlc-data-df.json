@@ -1,0 +1,9 @@
+{
+	"name": "newyork-tlc-data-df",
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "31c979ed-d667-428d-a4d8-a42c08943ffc",
+		"tenantId": "3f700f5e-bcd1-4536-bb6c-c0f6d08a6c4f"
+	}
+}

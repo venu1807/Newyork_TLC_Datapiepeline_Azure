@@ -1,0 +1,63 @@
+{
+	"name": "test_data_csv_http",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "tlcdataimport",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Industry_aggregation_NZSIOC",
+				"type": "String"
+			},
+			{
+				"name": "Industry_code_NZSIOC",
+				"type": "String"
+			},
+			{
+				"name": "Industry_name_NZSIOC",
+				"type": "String"
+			},
+			{
+				"name": "Units",
+				"type": "String"
+			},
+			{
+				"name": "Variable_code",
+				"type": "String"
+			},
+			{
+				"name": "Variable_name",
+				"type": "String"
+			},
+			{
+				"name": "Variable_category",
+				"type": "String"
+			},
+			{
+				"name": "Value",
+				"type": "String"
+			},
+			{
+				"name": "Industry_code_ANZSIC06",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
